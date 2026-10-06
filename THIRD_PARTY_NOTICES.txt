@@ -1,0 +1,22 @@
+Extrator de Demonstrativos de Aluguel 0.2.4
+
+Local OCR runtime
+-----------------
+The Windows distribution includes Tesseract OCR 5.5.0.20241111, built for
+Windows by UB Mannheim, plus the English and Portuguese traineddata files used
+by the application. Tesseract and the traineddata are licensed under Apache
+License 2.0. The complete Tesseract license is in _internal/ocr/LICENSE.TESSERACT.txt;
+the tessdata_fast license is in _internal/ocr/LICENSE.TESSDATA_FAST.txt.
+
+Tesseract Windows build: https://github.com/tesseract-ocr/tesseract/releases/tag/5.5.0
+Windows distribution information: https://github.com/UB-Mannheim/tesseract/wiki
+Portuguese model source: https://github.com/tesseract-ocr/tessdata_fast
+
+The Tesseract Windows build also bundles its dynamically linked runtime
+libraries (including Leptonica, libarchive, libcurl, OpenSSL, libjpeg-turbo,
+libpng, libtiff, libwebp, OpenJPEG, zlib, and their dependencies). Those
+components retain their respective upstream licenses and notices. The
+distribution contains only the runtime DLLs required by tesseract.exe.
+
+Python dependencies are listed in requirements-runtime.txt and their license
+metadata is included by PyInstaller in the application distribution.

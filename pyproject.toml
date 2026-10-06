@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alugueis-pdf-parser"
+version = "0.2.4"
+description = "Local deterministic extraction from rental statement PDFs"
+requires-python = ">=3.10"
+dependencies = ["pdfplumber==0.11.10", "openpyxl==3.1.5", "pypdfium2==5.14.0"]
+
+[tool.setuptools]
+packages = ["alugueis_extrator"]
