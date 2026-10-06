@@ -87,7 +87,7 @@ class ApplicationServiceTests(unittest.TestCase):
             run = run_application_batch(self.root, "09/2026")
         process.assert_called_once_with(
             self.root,
-            output_path=output,
+            output_path=self.root.resolve() / "Relatorio_Alugueis_09-2026.xlsx",
             report_period="09-2026",
             overwrite=False,
         )
